@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+}
+
+.customer-list {
+  width: 30%;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.customer-card {
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  
+}
+
+.customer-card p{
+  height: 75px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.customer-card.selected {
+  background-color: #e0e0e0;
+}
+
+.customer-details {
+  padding: 20px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  margin-top: 20px;
+}
+
+.photo-grid img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.customer-details .address{
+   padding: 0 200px;
+}
